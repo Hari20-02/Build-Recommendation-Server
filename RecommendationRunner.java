@@ -16,7 +16,7 @@ public class RecommendationRunner implements Recommender {
         FourthRatings fourthRatings = new FourthRatings ();
         MovieDatabase.initialize("ratedmoviesfull");
         RaterDatabase.initialize("ratings");
-        System.out.println("List Data for " + Integer.toString(MovieDatabase.size()) + " movies");
+        System.out.println("List Data for " + Integer.toString(MovieDatabase.size()) + " Movies");
         System.out.println("List Data for " + Integer.toString(RaterDatabase.size()) + " raters");
         int numSimilarRaters = 50;
         int minNumOfRatings = 5;
