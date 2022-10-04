@@ -20,7 +20,7 @@ public class RecommendationRunner implements Recommender {
         System.out.println("List Data for " + Integer.toString(RaterDatabase.size()) + " raters");
         int numSimilarRaters = 50;
         int minNumOfRatings = 5;
-        int x,y =0;
+        int x,y,z =0;
         ArrayList<Rating> similarRatings = fourthRatings.getSimilarRatings(webRaterID, numSimilarRaters, minNumOfRatings);
         if (similarRatings.size() == 0) {
             System.out.println("No matching movies were found");}
